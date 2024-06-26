@@ -81,11 +81,6 @@ function insertionSort(array) {
     return moves;
 }
 
-
-
-
-
-
 function animate() {
     ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
     let changed = false;

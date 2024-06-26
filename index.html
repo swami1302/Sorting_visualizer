@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sorting Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <h1>Sorting Visualizer</h1>
-    <canvas id="myCanvas"></canvas>
-    <hr>
-    <!-- <label for="">Enter length</label>
-    <input type="number" class="input">
-    <button class="btn">submit</button> -->
-    <div class="bubbleSort">
-        <h2>Bubble Sort</h2>
-        <button onclick="init()">Init</button>
-        <button onclick="play_bubble()">play</button>
+   <div class="main">
+        <canvas id="myCanvas"></canvas>
+        <div class="chartContainer">
+            <h2>Time Complexity Comparison</h2>
+            <canvas id="timeComplexityChart"></canvas>
+        </div>
     </div>
-    <div class="insertionSort">
-        <h2>Insertion Sort</h2>
-        <button onclick="init()">Init</button>
-        <button onclick="play_insertion()">play</button>
+  
+    <div class="container">
+        <div class="bubbleSort">
+            <h2>Bubble Sort</h2>
+            <p>Best Time Complexity: <strong>O(n)</strong></p>
+            <p>Worst Time Complexity: <strong>O(n<sup>2</sup>)</strong></p>
+            <button onclick="init()">Init</button>
+            <button onclick="play_bubble()">Play</button>
+        </div>
+        <div class="insertionSort">
+            <h2>Insertion Sort</h2>
+            <p>Best Time Complexity: <strong>O(n)</strong></p>
+            <p>Worst Time Complexity: <strong>O(n<sup>2</sup>)</strong></p>
+            <button onclick="init()">Init</button>
+            <button onclick="play_insertion()">Play</button>
+        </div>
     </div>
+    
     <!-- <div class="mergeSort">
         <h2>Merge Sort</h2>
         <button onclick="init()">Init</button>
-        <button onclick="play_merge()">play</button>
+        <button onclick="play_merge()">Play</button>
     </div> -->
 
     <script src="./Column.js"></script>
     <script src="./script.js"></script>
+    <script src="./chart.js"></script>
 </body>
 </html>
